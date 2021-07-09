@@ -1,0 +1,218 @@
+:root {
+  /* ### Primary */
+  --main-dark-blue: hsl(218, 28%, 13%);
+  /* - Dark Blue (main background):  */
+  --footer-dark-blue: hsl(216, 53%, 9%);
+  /* - Dark Blue (footer background):  */
+  --testinomials-blue: hsl(219, 30%, 18%);
+  /* - Dark Blue (testimonials background):  */
+  --intro-email-signup-blue: hsl(217, 28%, 15%);
+  /* - Dark Blue (intro and email sign up background):  */
+  /* ### Accent */
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+  /* - Cyan (inside call-to-action gradient):  */
+  /* - Blue (inside call-to-action gradient):  */
+  /* - Light Red (error):  */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: hsl(218, 28%, 13%); */
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+body .bg {
+  position: absolute;
+  margin-bottom: 600px;
+  z-index: 3;
+}
+header {
+  background: var(--testinomials-blue);
+}
+header .background svg {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  margin-top: -300px;
+}
+main {
+  background: var(--main-dark-blue);
+}
+body h1,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+body h1 {
+  font-size: 40px;
+}
+nav {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navbar {
+  display: flex;
+  padding-top: 14px;
+}
+nav .navbar ul {
+  display: flex;
+  list-style: none;
+}
+nav .navbar li {
+  padding-left: 60px;
+}
+nav .navbar li a {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+}
+nav .navbar li a:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.land-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 25rem 0rem 25rem;
+}
+.land-page img {
+  margin-bottom: 50px;
+}
+.land-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+.land-page p {
+  text-align: center;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+.land-page .button {
+  background-image: linear-gradient(to right, var(--cyan), var(--blue));
+  padding: 1rem 5rem 1rem 5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.land-page .button:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(175, 23%, 50%),
+    hsl(198, 43%, 25%)
+  );
+  padding: 1rem 5rem 1rem 5rem;
+  border-radius: 3rem;
+}
+.land-page .button a {
+  color: white;
+  text-decoration: none;
+}
+.land-page .button a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.features {
+  padding: 8rem;
+  text-align: center;
+  margin-bottom: -200px;
+}
+.features .features-top {
+  display: flex;
+  margin-bottom: -90px;
+}
+.features .features-bottom {
+  display: flex;
+}
+
+.features h3 {
+  margin-bottom: 20px;
+}
+.features .icon {
+  margin-bottom: 20px;
+}
+.features .features-top .top-right,
+.top-left,
+.bottom-right,
+.bottom-left {
+  padding: 6.5rem;
+}
+
+.work {
+  display: flex;
+  padding: 5rem;
+}
+
+.work .desc {
+  padding: 6rem 3rem 0rem 4rem;
+}
+.work .desc h1 {
+  margin-bottom: 20px;
+}
+.work .desc p {
+  margin-bottom: 20px;
+}
+
+.work .desc a {
+  color: hsl(176, 68%, 64%);
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+.work .desc a:hover {
+  color: white;
+  font-weight: bold;
+}
+.work .desc a span {
+  transform: translateY(20%);
+  content: url(../images/icon-arrow.svg);
+}
+
+.testimonials {
+  display: flex;
+  padding: 8rem;
+}
+.testimonials .t1,
+.t2,
+.t3 {
+  background-color: var(--testinomials-blue);
+  margin-right: 40px;
+  padding: 2.5rem 2rem 3rem 2.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 2;
+}
+.testimonials .p-testi p {
+  font-size: 13px;
+  padding-bottom: 30px;
+}
+.testimonials .pic-testi {
+  display: flex;
+}
+.testimonials .pic-testi img {
+  width: 50px;
+  margin-right: 20px;
+  border-radius: 100px;
+}
+.testimonials .pic-testi .desc-testi {
+  padding-top: 0.5rem;
+}
+.testimonials .pic-testi .desc-testi p {
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+.testimonials .bg-quotes img {
+  position: absolute;
+  display: flex;
+  margin-top: -30px;
+  margin-left: -20px;
+  z-index: 1;
+}

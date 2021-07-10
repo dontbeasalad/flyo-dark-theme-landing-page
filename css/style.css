@@ -179,7 +179,7 @@ nav .navbar li a:hover {
 
 .testimonials {
   display: flex;
-  padding: 8rem;
+  padding: 8rem 8rem 25rem 8rem;
 }
 .testimonials .t1,
 .t2,
@@ -215,4 +215,148 @@ nav .navbar li a:hover {
   margin-top: -30px;
   margin-left: -20px;
   z-index: 1;
+}
+
+.email-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email-card .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--testinomials-blue);
+  padding: 2rem 4rem 2rem 4rem;
+  width: 900px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+}
+.email-card .description h1 {
+  margin-bottom: 40px;
+}
+.email-card .description p {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.email-card .input {
+  display: flex;
+}
+.email-card .input input {
+  width: 500px;
+  border-radius: 3rem;
+  margin-right: 30px;
+}
+input[type="email"] {
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.email-card .button {
+  background-image: linear-gradient(to right, var(--cyan), var(--blue));
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.email-card .button:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(175, 23%, 50%),
+    hsl(198, 43%, 25%)
+  );
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 3rem;
+}
+.email-card .button a {
+  color: white;
+  text-decoration: none;
+}
+.email-card .button a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--footer-dark-blue);
+  font-size: 16px;
+}
+footer .footer-logo {
+  padding: 15rem 8rem 2rem 8rem;
+}
+footer .fylo-footer {
+  padding: 2px 8rem 5rem 8rem;
+  display: flex;
+}
+footer .fylo-footer .fill {
+  display: flex;
+}
+footer .fylo-footer .fill .one {
+  margin-right: 2rem;
+}
+footer .fylo-footer .fill .location {
+  padding: 0rem 4rem 0rem 0rem;
+  width: 35%;
+  line-height: 20px;
+}
+footer .fylo-footer .fill .location p {
+  line-height: 25px;
+}
+footer .fylo-footer .fill .two {
+  width: 25%;
+}
+footer .fylo-footer .fill .two .telephone {
+  margin-bottom: 20px;
+}
+footer .fylo-footer .fill .two {
+  margin-bottom: 20px;
+}
+footer .fylo-footer .fill .two img {
+  margin-right: 20px;
+}
+footer .fylo-footer .fill .three {
+  display: flex;
+  width: 25%;
+}
+footer .fylo-footer .fill .three .left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+footer .fylo-footer .fill .three .right {
+  display: flex;
+  flex-direction: column;
+}
+footer .fylo-footer .fill .three a {
+  padding-bottom: 1rem;
+  color: white;
+  text-decoration: none;
+}
+footer .fylo-footer .fill .three a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+footer .fylo-footer .fill .four {
+  padding-left: 2rem;
+  width: 20%;
+}
+footer .fylo-footer .fill .four img {
+  border: 1px white solid;
+  padding: 6px;
+  margin: 2px;
+  border-radius: 100%;
+}
+footer .attribution {
+  text-align: center;
+  color: white;
+  padding-bottom: 2rem;
+}
+footer .attribution a {
+  color: white;
+}
+footer .attribution a:hover {
+  color: var(--cyan);
+  font-weight: bold;
 }
